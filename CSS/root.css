@@ -1,0 +1,288 @@
+:root{
+  
+  /* COLORS */
+  
+  /* Default colors */
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --tertiary-color: #28a745; 
+  
+  /* Basic colors */
+  --white: #FFFFFF;
+  --black: #000000;
+  
+  /* Theming Colors */
+  --light:#D6D6D6;
+  --dark:#121212;
+  
+  /* Red shades */
+  --red: #FF0000;
+  --light-red: #FF8888;
+  --dark-red: #990000;
+  
+  /* Green shades */
+  --green: #00FF00;
+  --light-green: #88FF88;
+  --dark-green: #009900;
+  
+  /* Blue shades */
+  --blue: #0000FF;
+  --light-blue: #8888FF;
+  --dark-blue: #000099;
+  
+  /* Yellow shades */
+  --yellow: #FFFF00;
+  --light-yellow: #FFFF88;
+  --dark-yellow: #999900;
+  
+  /* Purple shades */
+  --purple: #800080;
+  --light-purple: #CC66CC;
+  --dark-purple: #660066;
+  
+  /* Orange shades */
+  --orange: #FFA500;
+  --light-orange: #FFD700;
+  --dark-orange: #FF6600;
+  
+  /* Gray shades */
+  --light-gray: #D3D3D3;
+  --medium-gray: #808080;
+  --dark-gray: #333333;
+  
+  
+  /* SPACING AND SIZING */
+  
+  /* Integer values */
+  
+  --min1: -1;
+  --n1: 1;
+  --n2: 2;
+  --n3: 3;
+  --n4: 4;
+  --n5: 5;
+  --n6: 6;
+  --n7: 7;
+  --n8: 8;
+  --n9: 9;
+  --n10: 10;
+  
+  /* Rem Units */
+
+  --s008: 0.08rem;
+  --s009: 0.09rem;
+  --s01: 0.1rem;
+  --s02: 0.2rem;
+  --s03: 0.3rem;
+  --s04: 0.4rem;
+  --s05: 0.5rem;
+  --s06: 0.6rem;
+  --s07: 0.7rem;
+  --s08: 0.8rem;
+  --s09: 0.9rem;
+  --s1: 1rem;
+  --s2: 2rem;
+  --s3: 3rem;
+  --s4: 4rem;
+  --s5: 5rem;
+  --s6: 6rem;
+  --s7: 7rem;
+  --s8: 8rem;
+  --s9: 9rem;
+  --s10: 10rem;
+  --s11: 11rem;
+  --s12: 12rem;
+  --s13: 13rem;
+  --s14: 14rem;
+  --s15: 15rem;
+  --s16: 16rem;
+  --s17: 17rem;
+  --s18: 18rem;
+  --s19: 19rem;
+  --s20: 20rem;
+  --s21: 21rem;
+  --s22: 22rem;
+  --s23: 23rem;
+  --s24: 24rem;
+  --s25: 25rem;
+  --s26: 26rem;
+  --s27: 27rem;
+  --s28: 28rem;
+  --s29: 29rem;
+  --s30: 30rem;
+  --s31: 31rem;
+  --s32: 32rem;
+  --s33: 33rem;
+  --s34: 34rem;
+  --s35: 35rem;
+  --s36: 36rem;
+  --s37: 37rem;
+  --s38: 38rem;
+  --s39: 39rem;
+  --s40: 40rem;
+  --s41: 41rem;
+  --s42: 42rem;
+  --s43: 43rem;
+  --s44: 44rem;
+  --s45: 45rem;
+  --s46: 46rem;
+  --s47: 47rem;
+  --s48: 48rem;
+  --s49: 49rem;
+  --s50: 50rem;
+  --s51: 51rem;
+  --s52: 52rem;
+  --s53: 53rem;
+  --s54: 54rem;
+  --s55: 55rem;
+  --s56: 56rem;
+  --s57: 57rem;
+  --s58: 58rem;
+  --s59: 59rem;
+  --s60: 60rem;
+  --s61: 61rem;
+  --s62: 62rem;
+  --s63: 63rem;
+  --s64: 64rem;
+  --s65: 65rem;
+  --s66: 66rem;
+  --s67: 67rem;
+  --s68: 68rem;
+  --s69: 69rem;
+  --s70: 70rem;
+  --s71: 71rem;
+  --s72: 72rem;
+  --s73: 73rem;
+  --s74: 74rem;
+  --s75: 75rem;
+  --s76: 76rem;
+  --s77: 77rem;
+  --s78: 78rem;
+  --s79: 79rem;
+  --s80: 80rem;
+  --s80: 80rem;
+  --s81: 81rem;
+  --s82: 82rem;
+  --s83: 83rem;
+  --s84: 84rem;
+  --s85: 85rem;
+  --s86: 86rem;
+  --s87: 87rem;
+  --s88: 88rem;
+  --s89: 89rem;
+  --s90: 90rem;
+  --s91: 91rem;
+  --s92: 92rem;
+  --s93: 93rem;
+  --s94: 94rem;
+  --s95: 95rem;
+  --s96: 96rem;
+  --s97: 97rem;
+  --s98: 98rem;
+  --s99: 99rem;
+  --s100: 100rem;
+  
+  /* Percent Units */
+
+  --sp1: 1%;
+  --sp2: 2%;
+  --sp3: 3%;
+  --sp4: 4%;
+  --sp5: 5%;
+  --sp6: 6%;
+  --sp7: 7%;
+  --sp8: 8%;
+  --sp9: 9%;
+  --sp10: 10%;
+  --sp11: 11%;
+  --sp12: 12%;
+  --sp13: 13%;
+  --sp14: 14%;
+  --sp15: 15%;
+  --sp16: 16%;
+  --sp17: 17%;
+  --sp18: 18%;
+  --sp19: 19%;
+  --sp20: 20%;
+  --sp21: 21%;
+  --sp22: 22%;
+  --sp23: 23%;
+  --sp24: 24%;
+  --sp25: 25%;
+  --sp26: 26%;
+  --sp27: 27%;
+  --sp28: 28%;
+  --sp29: 29%;
+  --sp30: 30%;
+  --sp31: 31%;
+  --sp32: 32%;
+  --sp33: 33%;
+  --sp34: 34%;
+  --sp35: 35%;
+  --sp36: 36%;
+  --sp37: 37%;
+  --sp38: 38%;
+  --sp39: 39%;
+  --sp40: 40%;
+  --sp41: 41%;
+  --sp42: 42%;
+  --sp43: 43%;
+  --sp44: 44%;
+  --sp45: 45%;
+  --sp46: 46%;
+  --sp47: 47%;
+  --sp48: 48%;
+  --sp49: 49%;
+  --sp50: 50%;
+  --sp51: 51%;
+  --sp52: 52%;
+  --sp53: 53%;
+  --sp54: 54%;
+  --sp55: 55%;
+  --sp56: 56%;
+  --sp57: 57%;
+  --sp58: 58%;
+  --sp59: 59%;
+  --sp60: 60%;
+  --sp61: 61%;
+  --sp62: 62%;
+  --sp63: 63%;
+  --sp64: 64%;
+  --sp65: 65%;
+  --sp66: 66%;
+  --sp67: 67%;
+  --sp68: 68%;
+  --sp69: 69%;
+  --sp70: 70%;
+  --sp71: 71%;
+  --sp72: 72%;
+  --sp73: 73%;
+  --sp74: 74%;
+  --sp75: 75%;
+  --sp76: 76%;
+  --sp77: 77%;
+  --sp78: 78%;
+  --sp79: 79%;
+  --sp80: 80%;
+  --sp81: 81%;
+  --sp82: 82%;
+  --sp83: 83%;
+  --sp84: 84%;
+  --sp85: 85%;
+  --sp86: 86%;
+  --sp87: 87%;
+  --sp88: 88%;
+  --sp89: 89%;
+  --sp90: 90%;
+  --sp91: 91%;
+  --sp92: 92%;
+  --sp93: 93%;
+  --sp94: 94%;
+  --sp95: 95%;
+  --sp96: 96%;
+  --sp97: 97%;
+  --sp98: 98%;
+  --sp99: 99%;
+  --sp100: 100%;
+  
+}

@@ -1,0 +1,34 @@
+@import "./import.css";
+
+/* TYPOGRAPHY */
+
+/* Text alignment */
+
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
+/* Font settings */
+
+/* Weight */
+.font-thin100{font-weight: 100;}
+.font-thin200{font-weight: 200;}
+.font-thin300{font-weight: 300;}
+.font-regular400{font-weight: 400;}
+.font-regular500{font-weight: 500;}
+.font-regular600{font-weight: 600;}
+.font-bold700{font-weight: 700;}
+.font-bold800{font-weight: 800;}
+.font-bold900{font-weight: 900;}
+
+/* Style */
+.font-italic{font-style: italic;}
+.font-oblique{font-style: oblique;}
+.font-normal{font-style: normal;}
+
+/* Size */
+.text-mini{font-size: var(--s05);}
+.text-body{font-size: calc(var(--s1) + 0.2rem);}
+.text-subtitle{font-size: calc(var(--s1) + 0.7rem);}
+.text-title{font-size: var(--s2);}
+.text-heading{font-size: calc(var(--s2) + 0.5rem);}

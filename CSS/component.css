@@ -1,0 +1,121 @@
+@import "./import.css";
+
+/* COMPONENTS */
+
+/* Root */
+body{
+    background: var(--black);
+}
+
+/* Header */
+header{
+    width: 100vw;
+    padding: var(--s1) var(--s1);
+}
+.grid-layout-container.sidebar-shown > header{
+    max-width: 100vw; 
+}
+
+/* Navbar */
+navbar.toggle-visibility{
+    display: none;
+}
+
+/* Sidebar */
+sidebar{
+    
+}
+sidebar > .sidebar-routelink{
+    width: var(--s100p);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+sidebar .sidebar-routelink > img{
+    max-width: var(--s2);
+    height: auto;
+}
+.grid-layout-container.right-sidebar-expandable--left-main > sidebar .sidebar-routelink,
+.grid-layout-container.left-sidebar-expandable--right-main > sidebar .sidebar-routelink{
+    width: var(--s100p);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-layout-container.right-sidebar-expandable--left-main.sidebar-shown > sidebar .sidebar-routelink,
+.grid-layout-container.left-sidebar-expandable--right-main.sidebar-shown > sidebar .sidebar-routelink{
+    justify-content: left;
+}
+.grid-layout-container.right-sidebar-expandable--left-main > sidebar .sidebar-routelink > span,
+.grid-layout-container.left-sidebar-expandable--right-main > sidebar .sidebar-routelink > span{
+    display: none;
+    white-space: nowrap;
+}
+.grid-layout-container.right-sidebar-expandable--left-main.sidebar-shown > sidebar .sidebar-routelink > span,
+.grid-layout-container.left-sidebar-expandable--right-main.sidebar-shown > sidebar .sidebar-routelink > span{
+    display: flex;
+}
+
+
+/* Main */
+
+main{
+    overflow-y: auto; 
+    padding-bottom: var(--s5);
+}
+
+.grid-layout-container.sidebar-shown > main{ 
+    opacity: .3; 
+    white-space: nowrap; 
+}
+
+/* Routes */
+
+route{
+    display: none;
+}
+route.route-active{
+    display: block;
+}
+
+/* Heading */
+
+.heading{
+    width: 100%;
+    padding: var(--s3) var(--s1);
+    margin-bottom: var(--s3);
+}
+.heading > span{
+    margin-bottom: var(--s1);
+}
+.heading > span:last-child{
+    margin-bottom: 0;
+}
+
+/* Blockquote */
+
+.blockquote{}
+.blockquote-title{}
+.blockquote-body{}
+
+/* Container */
+
+.container{
+    
+}
+
+/* Content */
+
+.content{
+    padding: var(--s1);
+}
+.content-highlight{
+    padding: var(--s1);
+    font-weight: bold;
+}
+
+/*
+Carousel > Carousel wrapper > Carousel unit
+Gallery (Grid gallery (repeat), Flex gallery (wrap))
+Tab menu > Tab menu button ~ Tab unit
+*/

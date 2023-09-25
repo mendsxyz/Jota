@@ -1,0 +1,251 @@
+@import "./CSS/import.css";
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Noto+Sans+SC:wght@100;300;400;500;700&family=Questrial&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("./fonts/SpaceGrotesk-Regular.otf");
+}
+
+*,html,body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#app.dark-theme{
+  color: var(--light);
+  background: var(--dark);
+  border-color: var(--grey);
+  --light: #F8F8F8;
+  --dark: #0F0F0F;
+  --grey: #1E1E1E;
+}
+#app{
+  width: var(--w100);
+  height: var(--h100);
+  margin: 0;
+  display: grid;
+  align-content: top;
+  justify-items: stretch;
+  grid-template-columns: 100% 0;
+  gap: 0;
+  position: fixed;
+  --w100: 100%;
+  --h100: 100%;
+}
+#app.toggle-view{
+  grid-template-columns: 0 100%;
+  gap: 0;
+  transition: .3s;
+}
+#app.toggle-view .notes-view{
+  opacity:0;
+}
+header{
+  text-align: center;
+}
+header > .header-title{
+  font-size: var(--s2);
+  font-weight: 800;
+}
+.content{
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  width: var(--w100);
+  padding: 0.5rem;
+}
+.content > button{
+  min-width: var(--sp50);
+  padding: 0.7rem 0;
+}
+
+.notes-view{
+  padding: 1rem 1rem 5rem 1rem;
+  opacity: 1;
+  overflow-y: auto;
+}
+.add-new-note{
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--white);
+    background: var(--orange);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 100%;
+}
+.notes-list{
+  background: rgba(225,225,225,0.04);
+  padding: 0;
+  margin: 1rem 0;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  flex-direction: column;
+}
+.note-saved{
+  padding: var(--s1) 0 0.8rem 0;
+  border-bottom: 0.05rem solid rgba(225,225,225,0.12);
+  transition: .3s;
+}
+.note-saved:last-child{
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.note-saved-content > span{
+    padding: 0 var(--s1);
+    margin-bottom: var(--s02);
+}
+.note-saved-content > span.title{
+  font-size: var(--s1);
+  font-weight: bold;
+}
+.note-saved-content > span.body{
+  font-size: var(--s09);
+  opacity:0.7;
+}
+.note-saved-content > span.timestamp{
+  font-size: var(--s09);
+  opacity:0.7;
+}
+.note-saved.active{
+    padding: var(--s1) 0 0;
+}
+
+.notes-editor{
+  padding: 0 0 5rem 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  flex-direction: column;
+}
+.actions > button{
+    color: var(--white);
+    background: var(--orange);
+}
+.note-title{
+  font-size: var(--title);
+  font-weight: bold;
+  width: var(--w100);
+  padding: var(--s05);
+  --w100: 100%;
+  --title: 2rem;
+}
+.note-body{
+  font-size: var(--body);
+  width: var(--w100);
+  padding: 0 var(--s05);
+  --w100: 100%;
+  --body: 1.2rem;
+}
+.save-note-button{
+  cursor: pointer;
+}
+.edit-note, .delete-note{
+  height: 0;
+  color: var(--orange);
+  background: none;
+  border-right: 0.05rem solid var(--dark-gray);
+  font-weight: bold;
+  padding: 0;
+  overflow: hidden;
+}
+.delete-note{
+    color: rgba(225,225,225,0.5);
+    border-right: 0;
+}
+.note-saved.active > .note-saved-actions > .edit-note,
+.note-saved.active > .note-saved-actions > .delete-note{
+    height: auto;
+    padding: 0.8rem 0;
+    margin: 0.5rem 0 0 0;
+    border-top: 0.05rem solid var(--dark-gray);
+    overflow: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.disabled{
+    display:none;
+    pointer-events: none;
+}
+
+/* Larger screens */
+@media screen and (min-width:769px){
+    header{
+        text-align: center;
+    }
+    header > .header-title{
+        font-size: var(--s3);
+    }
+    .notes-view{
+        padding: 2rem 15%;
+    }
+    .notes-view > div:last-child{
+        padding: 2rem;
+    }
+    .add-new-note{
+        width: 3rem;
+        height: 3rem;
+        font-size: calc(var(--s2) - 0.4rem);
+        font-weight: bold;
+    }
+    .notes-list{
+        max-width: 900px;
+        padding: 0;
+        margin: 1rem auto;
+    }
+    .note-saved{
+        padding: var(--s1) 0;
+    }
+    .note-saved:last-child{
+        padding: var(--s1) 0;
+    }
+    .note-saved.active{
+        padding: var(--s1) 0 0;
+    }
+    .note-saved-content > span{
+        padding: 0 var(--s2);
+    }
+    .note-saved-content > span.title{
+        font-size: var(--s2);
+    }
+    .note-saved-content > span.body,
+    .note-saved-content > span.timestamp{
+        font-size: calc(var(--s2) - 0.4rem);
+    }
+    .note-saved-content > span:last-child{
+        padding: 0 var(--s2);
+    }
+    .edit-note, .delete-note{
+        color: var(--orange);
+        background: none;
+        font-size: calc(var(--s2) - 0.6rem);
+        font-weight: bold;
+    }
+    .delete-note{
+        color: var(--gray);
+    }
+    .notes-editor{
+        padding: 2rem 15%;
+    }
+    .actions{
+        margin-bottom: 2rem;
+    }
+    .actions > button{
+        color: var(--white);
+        background: var(--orange);
+        font-size: calc(var(--s2) - 0.6rem);
+        font-weight: bold;
+    }
+    .note-title{
+        font-size: var(--s2);
+    }
+    .note-body{
+        font-size: calc(var(--s2) - 0.4rem);
+    }
+}
