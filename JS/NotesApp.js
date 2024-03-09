@@ -48,9 +48,6 @@ const NotesView = {
                       <a href="" class="facebook">
                         <img src="./icon/facebook-512.png" alt="fb">
                       </a>
-                      <a href="" class="gmail">
-                        <img src="./icon/gmail-white-icon-512.png" alt="gm">
-                      </a>
                     </div>
                   </div>
                 </div>
