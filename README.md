@@ -1,6 +1,6 @@
-# Jota - A Note Taking Web App
+# Jotr - A Note Taking Web App
 
-Welcome to Jota, a simple and intuitive web application designed to help you organize 
+Welcome to Jotr, a simple and intuitive web application designed to help you organize 
 your thoughts, ideas, and memos with ease.
 
 ## Features
@@ -12,8 +12,8 @@ your thoughts, ideas, and memos with ease.
 
 ## Getting Started
 
-To get started with Jota, simply visit our [jota.vercel.app](#)
-to gain access to all of Jota's features, allowing you to start organizing your notes immediately.
+To get started with Jotr (Jotter), simply visit [jotr.vercel.app](#)
+to gain access to all of Jotr's features, allowing you to start organizing your notes immediately.
 
 ## How to Use
 
@@ -42,10 +42,9 @@ to gain access to all of Jota's features, allowing you to start organizing your 
 
 ## Contributing
 
-We welcome contributions from the community! 
+I welcome contributions from the community! 
 If you have any ideas for new features, bug fixes, 
-or improvements, please feel free to open an issue 
-or submit a pull request on our GitHub repository.
+or improvements, please feel free to open an issue or submit a pull request on my GitHub repository.
 
 ## License
 
@@ -53,6 +52,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for using Jota! We hope this tool helps you stay organized
+Thank you for using Jotr! I hope this tool helps you stay organized
 and productive. If you have any questions or feedback,
-please don't hesitate to reach out to us. Happy note-taking!
+please don't hesitate to reach out to me. Happy note-taking!
